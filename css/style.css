@@ -1,0 +1,142 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:"Roboto";
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: rgb(250, 250, 250);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER*/
+
+header {
+    background-color:rgb(52, 96, 240);
+    padding: 3.6rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__link {
+    font-size: 1.8em;
+    padding: 0.8rem 1.6rem;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(52, 96, 240);
+    z-index: 3;
+}
+
+.submenu__link {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8em;
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+}
+
+/*Main*/
+
+.contenedor1 {
+    width: 100%;
+    height: 5%;
+}
+
+.slogan {
+background-color: rgb(52, 96, 240);
+padding: 30px;
+color:rgb(255, 255, 255);
+font-size: 32px;
+font-weight: bold;
+font-style: italic;
+box-sizing: border-box;
+width: 100%;
+position: absolute;
+transform: translate(600px, 520px);
+}
+
+.contenedor2 {
+    width: 100%;
+    height: 20%;
+}
+
+.texto1 {
+    color: rgb(52, 96, 240);
+    font-size: 25px;
+    font-style: italic;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.iconos{
+font-size: 32px;
+display: inline;
+background-color: aquamarine;
+padding: 20px;
+margin: 10px;
+width: 100%;
+}
+.contenedor2{
+    width: 100%;
+    display: flex;
+}
