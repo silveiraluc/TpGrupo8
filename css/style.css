@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -7,13 +9,13 @@
 }
 
 html {
-    font-family:"Roboto";
+    font-family:'Roboto', Courier, monospace;
     font-size: 62.5%;
 }
 
 a {
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: 'Roboto', Courier, monospace;
     color: rgb(250, 250, 250);
 }
 
@@ -34,7 +36,7 @@ img {
 
 header {
     background-color:rgb(52, 96, 240);
-    padding: 3.6rem;
+    padding: 0.6rem;
 }
 
 .navbar {
