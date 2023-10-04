@@ -38,6 +38,10 @@ header {
     background-color:rgb(52, 96, 240);
     padding: 0.6rem;
 }
+.sticky{
+    position: fixed;
+    width: 100%;
+}
 
 .navbar {
     display: flex;
@@ -116,10 +120,6 @@ position: absolute;
 transform: translate(600px, 520px);
 }
 
-.contenedor2 {
-    width: 100%;
-    height: 20%;
-}
 
 .texto1 {
     color: rgb(52, 96, 240);
@@ -130,15 +130,202 @@ transform: translate(600px, 520px);
     width: 100%;
 }
 
-.iconos{
-font-size: 32px;
-display: inline;
-background-color: aquamarine;
-padding: 20px;
-margin: 10px;
-width: 100%;
-}
 .contenedor2{
     width: 100%;
+    height: 40%;
     display: flex;
+}
+
+.icon_actividades{
+    background-image: url(/img/img_inicio/montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+
+.icon_rutas{
+    background-image: url(/img/img_inicio/RUTAS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+
+ }
+ .icon_parques{
+    background-image: url(/img/img_inicio/parque\ acuatico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+
+ }
+ .icon_hoteles{
+    background-image: url(/img/img_inicio/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+
+ }
+ 
+
+.contenedor3{
+    position: relative;
+}
+
+.titulo_costa{
+        font-family: 'Roboto', Courier, monospace;
+        font-size: 3em;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        transform: translate(-10%, -50%);
+        white-space: nowrap;
+}
+.boton_destinos{
+    position: absolute;  
+    top: 40%;
+    left:80%;
+    transform: translate(-10%, -50%);
+    padding: 10px 20px;
+    background-color:rgb(52, 96, 240) ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.contenedor4{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+
+.icon_mapas{
+    background-image: url(/img/img_inicio/MAPA\ RUTA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display:inline-block;
+    padding: 20px;
+    margin:0 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.icon_consejos{
+    background-image: url(/img/img_inicio/escuchar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline-block;
+    padding: 20px;
+    margin:0 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.icon_botiquin{
+    background-image: url(/img/img_inicio/SALUD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 300px;
+    display: inline-block;
+    padding: 20px;
+    margin:0 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+
+.contenedor5{
+    position: relative;
+}
+
+.titulo_perito{
+        font-family: 'Roboto', Courier, monospace;
+        font-size: 3em;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        white-space: nowrap;
+}
+.boton_imperdibles{
+    position: absolute;  
+    top: 70%;
+    left:20%;
+    transform: translate(-10%, -50%);
+    padding: 10px 20px;
+    background-color:rgb(52, 96, 240) ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 1em;
+    font-weight: bold;
 }
