@@ -38,15 +38,11 @@ header {
     background-color:rgb(52, 96, 240);
     padding: 0.6rem;
 }
-.sticky{
-    position: fixed;
-    width: 100%;
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items:last baseline;
+    align-items:baseline;
 }
 
 .navbar__logo {
@@ -56,7 +52,7 @@ header {
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navbar__link {
@@ -65,10 +61,12 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    border-radius: 20px;
 }
 
 .navbar__link:hover {
     background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
 }
 
 .with-icon {
@@ -98,6 +96,7 @@ header {
 
 .submenu__link:hover {
     background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240); 
 }
 
 /*Main*/
@@ -366,5 +365,9 @@ footer{
     margin-left: 250px;
     margin-right: 10px;
     font-size: 1rem;
+}
+
+.fab:hover {
+    transform: scale(1.7);
 }
 

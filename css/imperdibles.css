@@ -200,16 +200,18 @@ footer {
     background-color: black;
     color:white;
     border-radius: 25px;
+    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .follow {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .follow__us {
@@ -227,4 +229,8 @@ footer {
     margin-left: 80px;
     margin-right: 10px;
     font-size: 1rem;
+}
+
+.fab:hover {
+    transform: scale(1.7);
 }
