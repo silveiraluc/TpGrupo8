@@ -173,6 +173,8 @@ header {
     font-family: 'Roboto', Courier, monospace;
     font-size: 4.6em;
     font-weight: 500;
+    text-shadow: 2px 2px 4px rgb(52, 96, 240);
+    animation: colors 10s infinite;
 }
 
 .destino__link {
@@ -233,4 +235,11 @@ footer {
 
 .fab:hover {
     transform: scale(1.7);
+}
+
+@keyframes colors {
+    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
+    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
+    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
+    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }
