@@ -65,6 +65,10 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
 }
 
 .navbar__link:hover {
@@ -94,6 +98,10 @@ header {
     padding: 0.8rem 1.6rem;
     font-size: 1.8em;
     transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
 }
 
 .submenu__link:hover {
