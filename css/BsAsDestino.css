@@ -27,17 +27,26 @@ img {
     width: 100%;
 }
 
-/* IMPERDIBLES HEADER*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER*/
 
 header {
     background-color:rgb(52, 96, 240);
     padding: 0.6rem;
 }
+.sticky{
+    position: fixed;
+    width: 100%;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items:last baseline;
 }
 
 .navbar__logo {
@@ -47,7 +56,7 @@ header {
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .navbar__link {
@@ -56,12 +65,14 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
-    border-radius: 20px;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
 }
 
 .navbar__link:hover {
-    background-color: rgba(75, 248, 6, 0.938);
-    color: rgb(52, 96, 240);
+    background-color: rgba(150, 255, 51, 0.9);
 }
 
 .with-icon {
@@ -87,17 +98,20 @@ header {
     padding: 0.8rem 1.6rem;
     font-size: 1.8em;
     transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
 }
 
 .submenu__link:hover {
-    background-color: rgba(75, 248, 6, 0.938);
-    color: rgb(52, 96, 240);
+    background-color: rgba(150, 255, 51, 0.9);
 }
 
-/* IMPERDIBLES BELOW*/
+/* BUENOS AIRES BELOW*/
 
 .below {
-    background-image: url(../img/img_imperdibles/Imperdibles.jpg);
+    background-image: url(../img/img_destinos/destinos_00/1_00_buenos_aires.jpeg);
     padding: 15rem;
     background-position: top;
     background-size: cover;
@@ -145,7 +159,7 @@ header {
     margin-top: 2rem;
 }
 
-/* IMPERDIBLES TOP 3*/
+/* main DESTINOS*/
 
 .destino {
     display: grid; 
@@ -173,8 +187,6 @@ header {
     font-family: 'Roboto', Courier, monospace;
     font-size: 4.6em;
     font-weight: 500;
-    text-shadow: 2px 2px 4px rgb(52, 96, 240);
-    animation: colors 10s infinite;
 }
 
 .destino__link {
@@ -193,21 +205,19 @@ header {
     color: rgb(52, 96, 240)
 }
 
-/*FOOTER*/
+/*Footer*/
 
-footer {
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color:white;
     border-radius: 25px;
-    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .follow {
@@ -228,18 +238,7 @@ footer {
 }
 
 .footer__copy {
-    margin-left: 80px;
+    margin-left: 250px;
     margin-right: 10px;
     font-size: 1rem;
-}
-
-.fab:hover {
-    transform: scale(1.7);
-}
-
-@keyframes colors {
-    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
-    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
-    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
-    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }
