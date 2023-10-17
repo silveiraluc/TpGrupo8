@@ -100,10 +100,9 @@ header {
 
 }
 
-/* Main CUYO */
-
+/* Main PATAGONIA */
 .below {
-    background-image: url(../img/img_destinos/CUYO.jpg);
+    background-image: url(../img/img_destinos/PATAGONIA.jpg);
     padding: 15rem;
     background-position: top;
     background-size: cover;
