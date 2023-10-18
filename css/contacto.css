@@ -8,67 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-h2 {
-    text-align: center;
-}
-
-form {
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.row {
-    margin-bottom: 20px;
-}
-
-.col-25,
-.col-75 {
-    padding: 0 10px;
-}
-
-.col-25 {
-    width: 25%;
-    float: left;
-}
-
-.col-75 {
-    width: 75%;
-    float: left;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-
 html {
     font-family:'Roboto', Courier, monospace;
     font-size: 62.5%;
@@ -88,27 +27,17 @@ img {
     width: 100%;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* HEADER*/
+/* IMPERDIBLES HEADER*/
 
 header {
     background-color:rgb(52, 96, 240);
     padding: 0.6rem;
 }
 
-.sticky{
-    width: 100%;
-    position: fixed;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items:baseline;
+    align-items: baseline;
 }
 
 .navbar__logo {
@@ -127,15 +56,11 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
     border-radius: 20px;
 }
 
 .navbar__link:hover {
-    background-color: rgba(150, 255, 51, 0.9);
+    background-color: rgba(75, 248, 6, 0.938);
     color: rgb(52, 96, 240);
 }
 
@@ -162,266 +87,127 @@ header {
     padding: 0.8rem 1.6rem;
     font-size: 1.8em;
     transition: background .3s ease-in-out;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
 }
 
 .submenu__link:hover {
-    background-color: rgba(150, 255, 51, 0.9);
-    color: rgb(52, 96, 240); 
-}
-
-/*Main*/
-
-.contenedor1 {
-    width: 100%;
-    height: 5%;
-    margin-bottom: 10rem;
-}
-
-.slogan {
-background-color: rgb(52, 96, 240);
-padding: 30px;
-color:rgb(255, 255, 255);
-font-size: 32px;
-font-weight: bold;
-font-style: italic;
-box-sizing: border-box;
-width: 100%;
-position:absolute;
-transform: translate(600px, 520px);
-}
-
-
-.texto1 {
+    background-color: rgba(75, 248, 6, 0.938);
     color: rgb(52, 96, 240);
-    font-size: 25px;
-    font-style: italic;
-    margin: auto;
-    padding: 10px;
-    width: 100%;
 }
 
-.contenedor2{
-    width: 100%;
-    height: 40%;
+/* IMPERDIBLES BELOW*/
+
+.below {
+    background-image: url(../img/img_imperdibles/Imperdibles.jpg);
+    padding: 15rem;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.below__content {
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.icon_actividades{
-    background-image: url(/img/img_inicio/montaña.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display: inline;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-}
-
-.icon_rutas{
-    background-image: url(/img/img_inicio/RUTAS.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display: inline;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-
- }
- .icon_parques{
-    background-image: url(/img/img_inicio/parque\ acuatico.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display: inline;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-
- }
- .icon_hoteles{
-    background-image: url(/img/img_inicio/hotel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display: inline;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-
- }
- 
-
-.contenedor3{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    z-index: 2;
     position: relative;
-    margin-bottom: 5rem;
+    align-items: flex-end;
 }
 
-.titulo_costa{
-        font-family: 'Roboto', Courier, monospace;
-        font-size: 3em;
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.9);
-        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-        position: absolute;
-        top: 20%;
-        left: 60%;
-        transform: translate(-10%, -50%);
-        white-space: nowrap;
-}
-.boton_destinos{
-    position: absolute;  
-    top: 40%;
-    left:80%;
-    transform: translate(-10%, -50%);
-    padding: 10px 20px;
-    background-color:rgb(52, 96, 240) ;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 1em;
-    font-weight: bold;
+.below__title {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 
-.contenedor4{
-    width: 100%;
-    height: 40%;
+.under_below__text {
+    font-family: 'Roboto', Courier, monospace;
+    color: black;
+    font-size: 1.8rem;
+    text-shadow: 0px 10px 0px black 5px; 
+    margin-top: 2rem;
+}
+
+.under_below__month {
+    font-family: 'Roboto', Courier, monospace;
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.under_below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin-top: 2rem;
+}
+
+/* IMPERDIBLES TOP 3*/
+
+.destino {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border: 3px solid rgb(52, 96, 240);
+    background-color: rgb(182, 181, 181);
+    margin-bottom: 10px;
+}
+
+.destino:nth-child(2) .destino__cover {
+    order: -1;
+}
+
+.destino__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    padding: 15px;
     text-align: center;
 }
 
-.icon_mapas{
-    background-image: url(/img/img_inicio/MAPA\ RUTA.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display:inline-block;
-    padding: 20px;
-    margin:0 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+.destino__title {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 4.6em;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgb(52, 96, 240);
+    animation: colors 10s infinite;
 }
-.icon_consejos{
-    background-image: url(/img/img_inicio/escuchar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
+
+.destino__link {
     display: inline-block;
-    padding: 20px;
-    margin:0 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-}
-.icon_botiquin{
-    background-image: url(/img/img_inicio/SALUD.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    font-size: 32px;
-    text-align: center;
-    line-height: 300px;
-    display: inline-block;
-    padding: 20px;
-    margin:0 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-}
-
-.contenedor5{
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.titulo_perito{
-        font-family: 'Roboto', Courier, monospace;
-        font-size: 3em;
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.9);
-        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-        position: absolute;
-        top: 55%;
-        left: 10%;
-        transform: translate(-10%, -50%);
-        white-space: nowrap;
-}
-.boton_imperdibles{
-    position: absolute;  
-    top: 70%;
-    left:20%;
-    transform: translate(-10%, -50%);
-    padding: 10px 20px;
-    background-color:rgb(52, 96, 240) ;
+    font-size: 1.8em;
+    background-color: rgb(52, 96, 240);
     color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 1em;
-    font-weight: bold;
+    padding:1.6rem 3.6rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
 }
 
-/*Footer*/
+.destino__link:hover {
+    background-color:rgba(75, 248, 6, 0.938);
+    color: rgb(52, 96, 240)
+}
 
-footer{
+/*FOOTER*/
+
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color:white;
     border-radius: 25px;
+    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .follow {
@@ -442,11 +228,18 @@ footer{
 }
 
 .footer__copy {
-    margin-left: 250px;
+    margin-left: 80px;
     margin-right: 10px;
     font-size: 1rem;
 }
 
 .fab:hover {
     transform: scale(1.7);
+}
+
+@keyframes colors {
+    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
+    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
+    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
+    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }
