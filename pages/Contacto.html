@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Formulario de Contacto</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Argentina en Combo – Guía de viajes</title>
+        <link rel="shortcut icon" href="../icon/star_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <body>
+    <header> 
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Logo Argentina en combo">
+                </a>
+            </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href="./destinos.html">DESTINOS</a>
+                       <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">BUENOS AIRES</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">NOROESTE</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">CENTRO</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">NORESTE</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">CUYO</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">PATAGONIA</a>
+                            </li>
+                       </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">IMPERDIBLES</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./tips.html">TIPS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+        </nav>
+      </header>
+    
     <h2>Formulario de Contacto</h2>
     <form action="/submit_contact" method="post">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <label for="fname">Nombre:</label> <br>
+        <input type="text" id="fname" name="fname" placeholder="Tu nombre..."><br>
         <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" id="lname" name="lname" placeholder="Tu apellido..."><br>
         <label for="email">Correo Electrónico:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" placeholder="Tu email..."><br>
         <label for="description">Descripción:</label><br>
-        <textarea id="description" name="description"></textarea><br>
+        <textarea id="description" name="description" placeholder="Una breve descripción"></textarea><br>
         <input type="submit" value="Enviar">
     </form> 
+    <footer>
+        <picture class="navbar__logo">
+            <a href="../index.html">
+                <img src="../img/img_inicio/logo4.png" alt="Logo Argentina en combo">
+            </a>
+        </picture>
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">INICIO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">IMPERDIBLES</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./tips.html">TIPS</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="comment">Servicios de Guía Turismo</h2>
+        <div class="follow">
+            <p class="follow__us">¡SEGUINOS!</p>
+            <div class="follow__social_icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p class="footer__copy">©argentinaencombo. Todos los derechos reservados. Argentina en Combo. Av. Córdoba 1151 - C.A.B.A. CP (1429) - Argentina. Tel/Fax: 54-11-5675-4000 (rot.). Correo Electrónico: argentinaencombo@gmail.com &copy;</p> 
+        </div>
+    </footer>
 </body>
 </html>
