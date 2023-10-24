@@ -100,6 +100,68 @@ header {
 
 }
 
+/* Main CUYO */
+
+.below {
+    background-image: url(../img/img_destinos/CUYO.jpg);
+    padding: 15rem;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.below__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    z-index: 2;
+    position: relative;
+    align-items: flex-end;
+}
+
+.below__title {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+}
+
+
+.destino {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border: 3px solid rgb(52, 96, 240);
+    background-color: rgb(182, 181, 181);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.destino:nth-child(2) .destino__cover {
+    order: -1;
+}
+
+.destino__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.destino__title {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 4.6em;
+    font-weight: 500;
+}
+
+.destino_text{
+    font-size: 15px;
+}
+
 
 /*Footer*/
 
