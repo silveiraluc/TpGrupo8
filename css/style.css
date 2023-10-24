@@ -27,23 +27,14 @@ img {
     width: 100%;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* HEADER*/
 
 header {
     background-color:rgb(52, 96, 240);
     padding: 0.6rem;
-    z-index: 1;
 }
 
-.sticky{
-    width: 100%;
-    position: fixed;
-}
 
 .navbar {
     display: flex;
@@ -67,10 +58,10 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
-    -webkit-transition: background .3s ease-in-out;
+    /*-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;*/
     border-radius: 20px;
 }
 
@@ -102,10 +93,10 @@ header {
     padding: 0.8rem 1.6rem;
     font-size: 1.8em;
     transition: background .3s ease-in-out;
-    -webkit-transition: background .3s ease-in-out;
+    /*-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;*/
 }
 
 .submenu__link:hover {
@@ -130,8 +121,10 @@ font-weight: bold;
 font-style: italic;
 box-sizing: border-box;
 width: 100%;
-position:absolute;
-transform: translate(600px, 520px);
+text-align:end;
+margin-top: -10px;
+/*position:absolute;
+transform: translate(600px, 520px)*/;
 }
 
 
@@ -241,21 +234,23 @@ transform: translate(600px, 520px);
         font-style: italic;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-        position: absolute;
-        top: 20%;
+        /*position: absolute;*/
+        transform: translate(-10%, 200%);
+        text-align:right;
+        /*margin-right: 10px;
+        /*top: 20%;
         left: 60%;
-        transform: translate(-10%, -50%);
-        white-space: nowrap;
+        white-space: nowrap;*/
 }
 .boton_destinos{
-    position: absolute;  
+    position: absolute;
     top: 40%;
-    left:80%;
-    transform: translate(-10%, -50%);
+    left:70%;
+    transform: translate(-20%, 50%);
     padding: 10px 20px;
     background-color:rgb(52, 96, 240) ;
     color: white;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     font-size: 25px;
     border-radius: 1em;
@@ -278,7 +273,7 @@ transform: translate(600px, 520px);
     line-height: 300px;
     display:inline-block;
     padding: 20px;
-    margin:0 10px;
+    margin: 10px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -295,7 +290,7 @@ transform: translate(600px, 520px);
     line-height: 300px;
     display: inline-block;
     padding: 20px;
-    margin:0 10px;
+    margin: 10px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -312,7 +307,7 @@ transform: translate(600px, 520px);
     line-height: 300px;
     display: inline-block;
     padding: 20px;
-    margin:0 10px;
+    margin: 10px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -332,21 +327,22 @@ transform: translate(600px, 520px);
         font-style: italic;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-        position: absolute;
+        /*position: absolute;
         top: 55%;
         left: 10%;
-        transform: translate(-10%, -50%);
-        white-space: nowrap;
+        white-space: nowrap;*/
+        text-align: left;
+        transform: translate(10%, -250%);
 }
 .boton_imperdibles{
     position: absolute;  
     top: 70%;
     left:20%;
-    transform: translate(-10%, -50%);
+    transform: translate(-10%, -200%);
     padding: 10px 20px;
     background-color:rgb(52, 96, 240) ;
     color: white;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 25px;
     border-radius: 1em;
