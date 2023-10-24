@@ -163,7 +163,7 @@ header {
     background: rgb(128, 171, 236);
 }
 
-h2 {
+.titulo_destino {
     font-family: 'Roboto', Courier, monospace;
     font-size: 3rem;
     color: rgba(255, 255, 255, 0.9);
@@ -171,7 +171,8 @@ h2 {
     text-align: center;
     margin-top: 70px;
 }
-p {
+
+.texto_destino {
     font-family: 'Roboto', Courier, monospace;
     color: black;
     font-size: 1.5rem;
@@ -209,12 +210,10 @@ footer{
     background-color: black;
     color:white;
     border-radius: 25px;
-    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .follow {
@@ -235,7 +234,7 @@ footer{
 }
 
 .footer__copy {
-    margin-left: 80px;
+    margin-left: 250px;
     margin-right: 10px;
     font-size: 1rem;
 }

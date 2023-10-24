@@ -195,19 +195,18 @@ header {
 
 /*FOOTER*/
 
-footer {
+
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color:white;
     border-radius: 25px;
-    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .follow {
@@ -228,7 +227,7 @@ footer {
 }
 
 .footer__copy {
-    margin-left: 80px;
+    margin-left: 250px;
     margin-right: 10px;
     font-size: 1rem;
 }
@@ -236,6 +235,8 @@ footer {
 .fab:hover {
     transform: scale(1.7);
 }
+
+
 
 @keyframes colors {
     0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
