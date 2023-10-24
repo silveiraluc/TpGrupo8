@@ -46,7 +46,7 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items:last baseline;
+    align-items: baseline;
 }
 
 .navbar__logo {
@@ -56,7 +56,7 @@ header {
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navbar__link {
@@ -69,10 +69,16 @@ header {
     -moz-transition: background .3s ease-in-out;
     -ms-transition: background .3s ease-in-out;
     -o-transition: background .3s ease-in-out;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .navbar__link:hover {
     background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
 }
 
 .with-icon {
@@ -106,103 +112,92 @@ header {
 
 .submenu__link:hover {
     background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
 }
 
 /* BUENOS AIRES BELOW*/
 
-.below {
-    background-image: url(../img/img_destinos/destinos_00/1_00_buenos_aires.jpeg);
-    padding: 15rem;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
+.below_contenedor {
     position: relative;
-}
-
-.below__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: start;
-    z-index: 2;
-    position: relative;
-    align-items: flex-end;
-}
-
-.below__title {
-    font-family: 'Roboto', Courier, monospace;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-}
-
-.under_below__text {
-    font-family: 'Roboto', Courier, monospace;
-    color: black;
-    font-size: 1.8rem;
-    text-shadow: 0px 10px 0px black 5px; 
-    margin-top: 2rem;
-}
-
-.under_below__month {
-    font-family: 'Roboto', Courier, monospace;
-    color: black;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-}
-
-.under_below {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1rem;
-    margin-top: 2rem;
-}
-
-/* main DESTINOS*/
-
-.destino {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border: 3px solid rgb(52, 96, 240);
-    background-color: rgb(182, 181, 181);
-    margin-bottom: 10px;
-}
-
-.destino:nth-child(2) .destino__cover {
-    order: -1;
-}
-
-.destino__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-}
-
-.destino__title {
-    font-family: 'Roboto', Courier, monospace;
-    font-size: 4.6em;
-    font-weight: 500;
-}
-
-.destino__link {
     display: inline-block;
-    font-size: 1.8em;
-    background-color: rgb(52, 96, 240);
-    color: white;
-    padding:1.6rem 3.6rem;
-    border-radius: 50px;
-    font-weight: 500;
-    transition: background .3s ease-in-out;
+    text-align: right;
+   
+}
+ 
+
+.destino_X {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 2px 2px black, 0px 0px 25px blue, 0px 0px 5px blue;
 }
 
-.destino__link:hover {
-    background-color:rgba(75, 248, 6, 0.938);
-    color: rgb(52, 96, 240)
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px,1fr));
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.image {
+    height: 400px;
+    max-width: 1fr;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  
+.descripcion {
+    height: 400px;
+    max-width: 1fr;
+    object-fit: cover;
+    vertical-align: top;
+    background: rgb(128, 171, 236);
+}
+
+h2 {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 2px 2px black, 0px 0px 25px blue, 0px 0px 5px blue;
+    text-align: center;
+    margin-top: 70px;
+}
+p {
+    font-family: 'Roboto', Courier, monospace;
+    color: black;
+    font-size: 1.5rem;
+    text-shadow: 0px 10px 0px black 5px; 
+    text-align: justify;
+    margin: 50px 20px 40px;
+}
+
+
+.descripcion a {
+    text-decoration: none;
+    color: white;
+}
+
+/*.descripcion a:visited {
+    color: gray;*/
+
+.descripcion a:hover {
+    background-color: rgba(75, 248, 6, 0.938);
+    color: blueviolet;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding:0.2rem 2rem;
 }
 
 /*Footer*/
@@ -214,10 +209,12 @@ footer{
     background-color: black;
     color:white;
     border-radius: 25px;
+    font-family: 'Roboto', Courier, monospace;
 }
 
 .navbar {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .follow {
@@ -238,7 +235,17 @@ footer{
 }
 
 .footer__copy {
-    margin-left: 250px;
+    margin-left: 80px;
     margin-right: 10px;
     font-size: 1rem;
+}
+
+.fab:hover {
+    transform: scale(1.7);
+}
+@keyframes colors {
+    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
+    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
+    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
+    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }
