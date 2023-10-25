@@ -243,7 +243,7 @@ transform: translate(600px, 520px)*/;
         white-space: nowrap;*/
 }
 .boton_destinos{
-    position: absolute;
+    position: absolute; 
     top: 40%;
     left:70%;
     transform: translate(-20%, 50%);
@@ -255,6 +255,11 @@ transform: translate(600px, 520px)*/;
     font-size: 25px;
     border-radius: 1em;
     font-weight: bold;
+}
+
+.boton_destinos:hover{
+background-color: rgba(150, 255, 51, 0.9);
+color: rgb(52, 96, 240);
 }
 
 .contenedor4{
@@ -348,6 +353,11 @@ transform: translate(600px, 520px)*/;
     border-radius: 1em;
     font-weight: bold;
 }
+
+.boton_imperdibles:hover{
+    background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
+    }
 
 /*Footer*/
 
