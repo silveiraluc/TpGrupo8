@@ -62,6 +62,7 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    border-radius: 20px;
 }
 
 .navbar__link:hover {
@@ -175,9 +176,7 @@ header {
     padding: 12px;
     font-size: 1.3em;
     font-family: roboto, Courier;
-    white-space:pre-wrap;
-    line-height: 1.2em;
-    text-indent: 20px;
+    white-space:pre-line;
 } 
 
 .enlaces {
