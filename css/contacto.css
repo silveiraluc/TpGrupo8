@@ -27,7 +27,7 @@ img {
     width: 100%;
 }
 
-/* IMPERDIBLES HEADER*/
+/* HEADER*/
 
 header {
     background-color:rgb(52, 96, 240);
@@ -94,104 +94,44 @@ header {
     color: rgb(52, 96, 240);
 }
 
-/* IMPERDIBLES BELOW*/
+/*Main*/
 
-.below {
-    background-image: url(../img/img_imperdibles/Imperdibles.jpg);
-    padding: 15rem;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
+.below_contenedor {
     position: relative;
-}
-
-.below__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: start;
-    z-index: 2;
-    position: relative;
-    align-items: flex-end;
-}
-
-.below__title {
-    font-family: 'Roboto', Courier, monospace;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-}
-
-.under_below__text {
-    font-family: 'Roboto', Courier, monospace;
-    color: black;
-    font-size: 1.8rem;
-    text-shadow: 0px 10px 0px black 5px; 
-    margin-top: 2rem;
-}
-
-.under_below__month {
-    font-family: 'Roboto', Courier, monospace;
-    color: black;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-}
-
-.under_below {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1rem;
-    margin-top: 2rem;
-}
-
-/* IMPERDIBLES TOP 3*/
-
-.destino {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border: 3px solid rgb(52, 96, 240);
-    background-color: rgb(182, 181, 181);
-    margin-bottom: 10px;
-}
-
-.destino:nth-child(2) .destino__cover {
-    order: -1;
-}
-
-.destino__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-}
-
-.destino__title {
-    font-family: 'Roboto', Courier, monospace;
-    font-size: 4.6em;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgb(52, 96, 240);
-    animation: colors 10s infinite;
-}
-
-.destino__link {
     display: inline-block;
-    font-size: 1.8em;
-    background-color: rgb(52, 96, 240);
-    color: white;
-    padding:1.6rem 3.6rem;
-    border-radius: 50px;
-    font-weight: 500;
-    transition: background .3s ease-in-out;
+    text-align: center;
+   
 }
 
-.destino__link:hover {
-    background-color:rgba(75, 248, 6, 0.938);
-    color: rgb(52, 96, 240)
+.destino_X {
+    position: absolute;
+    top: 95%;
+    left: 67%;
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black, 0px 0px 25px black, 0px 0px 5px blue;
 }
+
+.acercaDe {
+    width: 40%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 15px;
+  }
+  
+  .izquierda {
+    float: right;
+    margin-right: 375px;
+  }
+
+  .derecha{
+    
+
+    color: black;
+    font-size: x-large;
+  }
+  
 
 /*FOOTER*/
 
@@ -235,11 +175,4 @@ footer {
 
 .fab:hover {
     transform: scale(1.7);
-}
-
-@keyframes colors {
-    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
-    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
-    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
-    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }

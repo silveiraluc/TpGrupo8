@@ -54,19 +54,33 @@
                 </ul>
         </nav>
       </header>
-    
-    <h2>Formulario de Contacto</h2>
+      <div class="bellow_contenedor">
+        <img src="../../img/CONTACTO.JPG" alt="Contacto"/>
+         <div class="destino_X">CONTACTO</div>
+     </div>
+
     <form action="/submit_contact" method="post">
-        <label for="fname">Nombre:</label> <br>
+        <label for="fname">Nombre *</label> <br>
         <input type="text" id="fname" name="fname" placeholder="Tu nombre..."><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Tu apellido..."><br>
-        <label for="email">Correo Electrónico:</label><br>
+        <label for="lname">Asunto</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Tu asunto..."><br>
+        <label for="email">Correo Electrónico *</label><br>
         <input type="email" id="email" name="email" placeholder="Tu email..."><br>
-        <label for="description">Descripción:</label><br>
+        <label for="description">Mensaje</label><br>
         <textarea id="description" name="description" placeholder="Una breve descripción"></textarea><br>
         <input type="submit" value="Enviar">
     </form> 
+
+    <div class="acercaDe">
+        <img class="izquierda" src="../../img/equipo.jpg">
+        <aside class="derecha">Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Fugiat ipsam facere quos ratione 
+            asperiores explicabo molestiae aliquam ad, unde 
+            sapiente cupiditate aut voluptate aperiam 
+            corporis corrupti, vel delectus tempora! Fugit
+        </aside>
+    </div>
+
     <footer>
         <picture class="navbar__logo">
             <a href="../index.html">
