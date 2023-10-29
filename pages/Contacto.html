@@ -53,32 +53,29 @@
                     </li>
                 </ul>
         </nav>
-      </header>
-      <div class="bellow_contenedor">
-        <img src="../../img/CONTACTO.JPG" alt="Contacto"/>
-         <div class="destino_X">CONTACTO</div>
-     </div>
+    </header>
+    <section class="below">
+        <div class="below__content container">
+            <h2 class="below__title">CONTACTO</h2>
+        </div>
+    </section>
 
-    <form action="/submit_contact" method="post">
-        <label for="fname">Nombre *</label> <br>
-        <input type="text" id="fname" name="fname" placeholder="Tu nombre..."><br>
-        <label for="lname">Asunto</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Tu asunto..."><br>
-        <label for="email">Correo Electrónico *</label><br>
+    <form class="formulario" action="/submit_contact" method="post">
+        <label for="fname">NOMBRE Y APELLIDO *</label> <br>
+        <input type="text" id="fname" name="fname" required placeholder="Tu nombre..."><br>
+        <label for="email">CORREO ELECTRONICO *</label><br>
         <input type="email" id="email" name="email" placeholder="Tu email..."><br>
-        <label for="description">Mensaje</label><br>
+        <label for="lname">ASUNTO</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Tu asunto..."><br>
+        <label for="description">MENSAJE</label><br>
         <textarea id="description" name="description" placeholder="Una breve descripción"></textarea><br>
-        <input type="submit" value="Enviar">
+        <input class= "enviar" type="submit" value="Enviar">
     </form> 
-
+    <h3 class="sobrenosotros">ACERCA DE NOSOTROS</h3>
     <div class="acercaDe">
         <img class="izquierda" src="../../img/equipo.jpg">
-        <aside class="derecha">Lorem ipsum, dolor sit amet consectetur 
-            adipisicing elit. Fugiat ipsam facere quos ratione 
-            asperiores explicabo molestiae aliquam ad, unde 
-            sapiente cupiditate aut voluptate aperiam 
-            corporis corrupti, vel delectus tempora! Fugit
-        </aside>
+        <p class="derecha">Somos un grupo de estudiantes del curso <b>Python Fullstack</b> del <b>Programa Codo a Codo</b>. <br> Desarrollamos esta página web dedicada a mostrar algunos lugares de la Republica Argentina que son ideales para visitar en familia, para poner en práctica gran parte de los conocimientos adquiridos.  
+        </p>
     </div>
 
     <footer>
