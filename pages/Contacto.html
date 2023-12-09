@@ -60,17 +60,41 @@
         </div>
     </section>
 
-    <form class="formulario" action="/submit_contact" method="post">
-        <label for="fname">NOMBRE Y APELLIDO *</label> <br>
-        <input type="text" id="fname" name="fname" required placeholder="Tu nombre..."><br>
-        <label for="email">CORREO ELECTRONICO *</label><br>
-        <input type="email" id="email" name="email" placeholder="Tu email..."><br>
-        <label for="lname">ASUNTO</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Tu asunto..."><br>
-        <label for="description">MENSAJE</label><br>
-        <textarea id="description" name="description" placeholder="Una breve descripción"></textarea><br>
-        <input class= "enviar" type="submit" value="Enviar">
-    </form> 
+    <form id="contacto">
+        <fieldset class="recuadro">
+        <legend>Datos de Contacto</legend>
+        <div class="linea">
+            <label for="nombre">Nombre</label>
+            <input size="20" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aquí">
+        </div>
+        <br>
+        <div class="linea">
+            <label for="apellido">Apellido</label>
+            <input size="20" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aquí">    
+        </div>
+        <br>
+        <div class="linea">
+            <label for="mail">Correo Electrónico</label>
+            <input size="50" type="email" name="mail" id="mail" placeholder="ejemplo@mail.com">
+        </div>
+        <br>
+        <div class="linea">
+            <label for="phone">Teléfono</label>
+            <input type="number" name="phone" id="phone" placeholder="Ej 11 5555 5555">
+        </div>
+        <br>
+        <div class="linea">
+        <label for="msjType">Mensaje</label>
+        <br>
+            <textarea id="msjType" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+        </div>
+        </fieldset> 
+        <div id="mensajeError"></div>
+        <div id="mensajeExito"></div>
+        <div>
+            <button type="submit" value="enviar" class="button">Enviar</button>
+        </div>
+    </form>
     <h3 class="sobrenosotros">ACERCA DE NOSOTROS</h3>
     <div class="acercaDe">
         <img class="izquierda" src="../../img/equipo.jpg">
@@ -113,8 +137,6 @@
             </div>
             <p class="footer__copy">©argentinaencombo. Todos los derechos reservados.<br> Argentina en Combo. Av. Córdoba 1151 - C.A.B.A. CP (1429) - Argentina.<br> Tel/Fax: 54-11-5675-4000 (rot.).<br> Correo Electrónico: argentinaencombo@gmail.com &copy;</p> 
         </div>  
-        <br>
-            <h2>Servicios de Guía Turismo</h2>
     </footer>
 </body>
 </html>

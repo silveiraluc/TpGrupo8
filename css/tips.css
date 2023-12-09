@@ -104,9 +104,11 @@ header {
         background-image: url(../img/img_tipsyconsejos/tipsyconsejos_image.jpg);
         padding:15rem;
         background-position:top;
+        background-repeat: no-repeat;;
         background-size:cover;
         background-attachment: fixed;
-        position: relative;   
+        position: relative;  
+        object-fit: cover;  
         margin-bottom: 3em;
 }
 
@@ -114,9 +116,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items:flex-start;
+    align-items:start;
     z-index: 2;
     position: relative;
+    align-items: flex-end;
 }
 
 .under_below_title{
@@ -124,7 +127,7 @@ header {
     font-size: 5rem;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
-    position:static;
+    /*position:static;*/
     text-align: right;
 }
 
@@ -138,7 +141,6 @@ header {
 }
 
 .container{
-    /*max-height: 1200px;*/
     margin:auto;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -161,8 +163,6 @@ header {
     text-transform: uppercase;
     z-index: -1;
     transform: translate(65%, -65%);
-    /*display: flex;*/
-    /*justify-content: center;*/
     margin-bottom: 15px;
     align-items: center;
 }
@@ -208,7 +208,7 @@ footer {
     font-size: 2rem;
 }
 
-.follow__social_icons i {
+.follow__social_icons  {
     margin-right: 10px;
     font-size: 25px;
 }
@@ -216,5 +216,123 @@ footer {
 .footer__copy {
     margin-left: 80px;
     margin-right: 10px;
+    margin-bottom: 10px;
     font-size: 1rem;
+}
+
+/*----------Responsive Tablet----------*/
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    
+    .navbar__logo {
+        max-width: 150px;
+    }
+
+    .navbar__link {
+        font-size: 1.5rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1.5rem;
+    }
+
+    .under_below {
+        padding:10rem;   
+        margin-bottom: 1.5em;
+    }
+
+    .under_below_title{
+        font-size: 3rem;
+    }
+
+    .container{
+        grid-template-columns: repeat(3,0.5fr);
+        column-gap: 0.3rem;
+    }
+
+    .main_title {
+        width: 100px;
+        height: 50px;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .iframe{
+        width: 220px;
+    }
+
+    .follow__us {
+        font-size: 1.5rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 15px;
+    }
+    
+    .footer__copy {
+        font-size: 0.5rem;
+    }
+}
+
+/*----------Responsive Mobile----------*/
+
+@media screen and (max-width: 640px) {
+    .navbar__logo {
+        max-width: 100px;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1rem;
+    }
+
+    .under_below {
+        padding:8rem;   
+        margin-bottom: 1em;
+    }
+
+    .under_below_title{
+        font-size: 2rem;
+    }
+
+    .container{
+        grid-template-columns: repeat(3,0.5fr);
+        column-gap: 0.3rem;
+    }
+
+    .main_title {
+        width: 60px;
+        height: 40px;
+        font-size: 1em;
+        margin-bottom: 0.5px;
+    }
+
+    .text_main {
+        margin-top: 2px;
+        padding: 6px;
+        font-size: 1em;
+    } 
+    
+    .iframe{
+        width: 130px;
+    }
+
+    .follow__us {
+        font-size: 1rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 10px;
+    }
+    
+    .footer__copy {
+        font-size: 0.3rem;
+    } 
+
+
 }

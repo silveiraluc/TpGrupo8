@@ -256,7 +256,7 @@ footer{
     font-size: 2rem;
 }
 
-.follow__social_icons i {
+.follow__social_icons  {
     margin-right: 10px;
     font-size: 25px;
 }
@@ -264,6 +264,7 @@ footer{
 .footer__copy {
     margin-left: 250px;
     margin-right: 10px;
+    margin-bottom: 10px;
     font-size: 1rem;
 }
 
@@ -276,3 +277,139 @@ footer{
     50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
     100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
 }
+
+
+/*----------Responsive Tablet----------*/
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    
+    .navbar__logo {
+        max-width: 150px;
+    }
+
+    .navbar__link {
+        font-size: 1.5rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1.5rem;
+    }
+
+    .destino_X {
+        font-size: 2rem;
+        top: 25%;
+        left: 75%;
+    }
+
+    figcaption {
+        top:160px;
+        right: 65px;
+        font-size: 1rem;
+    }
+
+    .main_container {
+        grid-template-columns: repeat(2, minmax(200px,1fr));
+        margin-top: 5px;
+        margin-bottom: 5px;
+        gap: 3px;
+    }
+
+    .image {
+        height: 200px;
+      }
+      
+    .descripcion {
+        height: 200px;
+    }
+    
+    .titulo_destino {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+    
+    .texto_destino {
+        font-size: 1rem;
+        margin: 10px 10px 15px;
+    }
+
+    .follow__us {
+        font-size: 1.5rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 15px;
+    }
+    
+    .footer__copy {
+        font-size: 0.5rem;
+    }
+    
+    }
+
+/*----------Responsive Mobile----------*/
+
+@media screen and (max-width: 640px) {
+    .navbar__logo {
+        max-width: 100px;
+    }
+    
+    .navbar__link {
+        font-size: 1rem;
+        padding: 0.5em; 
+    }
+    
+    .submenu__link {
+        font-size: 1rem;
+    }
+
+    .destino_X {
+        font-size: 1.5rem;
+        top: 20%;
+        left: 70%;
+    }
+    
+    figcaption {
+        top:120px;
+        right: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .main_container {
+        grid-template-columns: repeat(2, minmax(150px,1fr));
+        margin-top: 5px;
+        margin-bottom: 5px;
+        gap: 3px;
+    }
+    
+    .image {
+            height: 150px;
+    }
+          
+    .descripcion {
+            height: 150px;
+    }
+        
+    .titulo_destino {
+            font-size: 1rem;
+            margin-top: 15px;
+    }
+        
+    .texto_destino {
+            font-size: 0.6rem;
+            margin: 10px 10px 15px;
+    }
+
+    .follow__us {
+        font-size: 1rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 10px;
+    }
+    
+    .footer__copy {
+        font-size: 0.3rem;
+    }
+
+    }    
